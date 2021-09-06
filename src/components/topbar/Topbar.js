@@ -1,11 +1,11 @@
-import Home from './pages/home/Home'
+import "./topbar.css"
 
 function Topbar() {
   return (
-    <div className = "topbarContainer"
-    <div className="topberCenter"/>
-    <span className="logo".Lamasocial</span>
-    <div>clasName="searchba"
+    <div className = "topbarContainer">
+      Hello
+    </div>
   )
+}
 
-export default App;
+export default Topbar;
