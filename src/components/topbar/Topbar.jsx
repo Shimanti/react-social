@@ -1,17 +1,20 @@
-import Home from './pages/home/Home'
 import "./topbar.css"
-import { Search, Person, Chat, Notifications } from "@material-ui/icons"
+// import { Search, Person, Chat, Notifications } from "@material-ui/icons"
+import PersonIcon from '@material-ui/icons/Person'
+import SearchIcon from '@material-ui/icons/Search'
+import ChatIcon from '@material-ui/icons/Chat'
+import NotificationsIcon from '@material-ui/icons/Notifications'
 
 function Topbar() {
   return (
-    <div className = "topbarContainer">
+  <div className = "topbarContainer">
       <div className="topbarLeft">
         <span className="logo">Lamasocial</span>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-          <Search />
-          <input placeholder="Search forfriend, post or video" className="searchInput"/>
+          <SearchIcon />
+          <input placeholder="Search for friend, post or video" className="searchInput"/>
         </div>
       </div>
       <div className="topbarRight">
@@ -21,16 +24,16 @@ function Topbar() {
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
-            <Person />
+            <PersonIcon />
             <span className="topbarIconBadge">1</span>
           </div>
           <div className="topbarIconItem">
-            <Chat />
+            <ChatIcon />
             <span className="topbarIconBadge">2</span>
           </div>
           <div className="topbarIconItem">
-            <Notifications />
-            <span className="topbarIconBadge">3</span>
+            <NotificationsIcon />
+            <span className="topbarIconBadge">1</span>
           </div>
         </div>
         <img src="/assets/person/1.jpeg" alt="" className="topbarImg"/>
